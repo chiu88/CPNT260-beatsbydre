@@ -42,37 +42,6 @@ button {
     font-size: 12px;
 }
 
-header {
-    height: 100px;
-    background-color: #161616;
-}
-
-.hero {
-    height: 400px;
-    background-color: #999;
-}
-
-.product-line-up-container {
-    height: 400px;
-    background-color: #333;
-}
-
-.featured-product-container {
-    height: 400px;
-    background-color: #444;
-}
-
-.product-support-container {
-    height: 400px;
-    background-color: #555;
-}
-
-.subscription-container {
-    height: 400px;
-    background-color: #666;
-}
-
-
 /*
 * * * * * * * * * * * * * * * * * * * * * * * * * *
 
@@ -83,7 +52,7 @@ header style
 
 header {
     height: 80px;
-    background: #161616;
+    background-color: #161616;
     padding-top: 20px;
 }
 
@@ -92,5 +61,140 @@ header .logo {
     height: 40px;
     width: 40px;
     background-size: 40px;
+    float: left;
 
+
+}
+
+.desktop-nav .logo {
+    float: left;
+}
+
+header li {
+    display: inline-block;
+
+    margin-left: 25px;
+}
+
+header a {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    padding-right: 5px;
+    text-transform: uppercase;
+}
+
+header ul {
+    float: right;
+    margin-top: 10px;
+    padding: 0;
+    width: calc(100% - 60px);
+    text-align: right;
+
+}
+
+
+
+header a:hover {
+    opacity: .9;
+    color: white;
+    text-decoration: none;
+}
+
+header a:visited {
+
+}
+
+.desktop-nav .logo {
+    float: left;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav .logo {
+    display: inline-block;
+}
+
+.mobile-nav .hamburger-container,
+.mobile-nav .logo-container,
+.mobile-nav .search-container {
+    width: 40px;
+    display: inline-block;
+    margin-left: -4px;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .desktop-nav{
+        display: none;
+    }
+}
+
+/*
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+
+hero style
+
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+
+.hero {
+    height: 400px;
+    background-color: #999;
+}
+
+/*
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+
+product line-up container styles
+
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+.product-line-up-container {
+    height: 400px;
+    background-color: #333;
+}
+
+/*
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+
+featured product style
+
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+.featured-product-container {
+    height: 400px;
+    background-color: #444;
+}
+
+/*
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+
+product support style
+
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+.product-support-container {
+    height: 400px;
+    background-color: #555;
+}
+
+/*
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+subscription section style
+
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+.subscription-container {
+    height: 400px;
+    background-color: #666;
 }
