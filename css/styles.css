@@ -6,6 +6,16 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
  */
 
+/*
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+
+general style
+
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+
+
 h1, h2, h3 {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
@@ -30,4 +40,57 @@ p {
 button {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
+}
+
+header {
+    height: 100px;
+    background-color: #161616;
+}
+
+.hero {
+    height: 400px;
+    background-color: #999;
+}
+
+.product-line-up-container {
+    height: 400px;
+    background-color: #333;
+}
+
+.featured-product-container {
+    height: 400px;
+    background-color: #444;
+}
+
+.product-support-container {
+    height: 400px;
+    background-color: #555;
+}
+
+.subscription-container {
+    height: 400px;
+    background-color: #666;
+}
+
+
+/*
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+
+header style
+
+* * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+header {
+    height: 80px;
+    background: #161616;
+    padding-top: 20px;
+}
+
+header .logo {
+    background-image: url('../assets/logo.svg');
+    height: 40px;
+    width: 40px;
+    background-size: 40px;
+
 }
