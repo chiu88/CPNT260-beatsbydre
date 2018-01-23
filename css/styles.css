@@ -18,28 +18,52 @@ general style
 
 h1, h2, h3 {
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 700;
 }
 
 h1 {
     font-size: 70px;
+    font-weight: 900;
 }
 
 h2 {
     font-size: 50px;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 36px;
+    font-weight: 700;
 }
 
 p {
     font-family: sans-serif;
+    font-weight: bold;
 }
 
-button {
+.button {
     font-family: 'Oswald', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+    color: white;
+    background-color: red;
+    padding: 8px 30px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.red-button {
+    background: #e01e3c;
+    color: white;
+}
+
+.light-button {
+    border: 1px solid #999;
+    background: transparent;
+    color: #161616;
+}
+
+.dark-button {
+    background: #e01e3c;
 }
 
 /*
@@ -151,10 +175,35 @@ hero style
 
 
 .hero {
-    height: 400px;
+    height: calc(100vh - 80px);
     background-color: #999;
+    background-image: url('../assets/hero-large.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    background-position: center;
+
 }
 
+.hero-text-container {
+    padding-top: 50vh;
+
+}
+
+.hero-text-container h1 {
+    margin-bottom: 20px;
+}
+
+.hero-text-container p {
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        background-image: url('../assets/hero-small.jpg')
+    }
+}
 /*
 * * * * * * * * * * * * * * * * * * * * * * * * * *
 
