@@ -49,6 +49,7 @@ header style
 
 * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
+/*  General  */
 
 header {
     height: 80px;
@@ -61,29 +62,36 @@ header .logo {
     height: 40px;
     width: 40px;
     background-size: 40px;
-    float: left;
-
 
 }
+
+/* desktop */
 
 .desktop-nav .logo {
     float: left;
 }
 
-header li {
+.desktop-nav li {
     display: inline-block;
-
     margin-left: 25px;
 }
 
-header a {
+.desktop-nav a,
+.desktop-nav a:visited {
     font-family: 'Oswald', sans-serif;
     color: white;
-    padding-right: 5px;
     text-transform: uppercase;
 }
 
-header ul {
+.desktop-nav a:hover,
+.desktop-nav a:focus,
+.desktop-nav a:active {
+    opacity: 0.9;
+    color: white;
+    text-decoration: none;
+}
+
+.desktop-nav ul {
     float: right;
     margin-top: 10px;
     padding: 0;
@@ -92,24 +100,10 @@ header ul {
 
 }
 
-
-
-header a:hover {
-    opacity: .9;
-    color: white;
-    text-decoration: none;
-}
-
-header a:visited {
-
-}
-
-.desktop-nav .logo {
-    float: left;
-}
-
+/* Mobile */
 .mobile-nav {
     display: none;
+    text-align: center;
 }
 
 .mobile-nav .logo {
@@ -117,11 +111,24 @@ header a:visited {
 }
 
 .mobile-nav .hamburger-container,
-.mobile-nav .logo-container,
 .mobile-nav .search-container {
+    vertical-align: top;
+    margin-top: 8px;
     width: 40px;
     display: inline-block;
     margin-left: -4px;
+}
+
+.mobile-nav .logo-container {
+    display: inline-block;
+    margin-left: -4px;
+    width: calc(100% - 80px);
+}
+
+.mobile-nav button {
+    background: transparent;
+    border: none;
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -129,7 +136,7 @@ header a:visited {
         display: block;
     }
 
-    .desktop-nav{
+    .desktop-nav {
         display: none;
     }
 }
